@@ -1,4 +1,4 @@
-# ETL
+# ETL Report
 
 The purpopse of this project was to see if there was any correlation between the best selling games and the highest reviewed games.
 
@@ -8,6 +8,8 @@ https://www.kaggle.com/juttugarakesh/video-game-data
 We used 2 different CSV files for this. One that contained all video game reviews and another that contained all video game sales.
 
 # Data Transformation
+We stored the Name, Platform,	Year of Release,	Genre,	Publisher, Global players,	Critic Score,	User Score,	Developer, Norht American Sales, European Sales, Japan Sales, Other Sales, Global Sales and Rating into our database.
+And we used MySQL because it is the most commonly used and well known database as well as we wanted to see the bogger picture of our data and MySQL also works well with CSV files.
 We filtered out user_score with the "tbd" acronym on them.
 We did not filter out the games with 'NA' on the review section of the tables because we found that some of the highest selling games of all time came out many moons ago and it would be unfair and inaccurate to filter out some of the best selling games of all time only because they were not reviewed then.
 We joined the 2 tables together by 'name', 'year of release', and 'platform'.
